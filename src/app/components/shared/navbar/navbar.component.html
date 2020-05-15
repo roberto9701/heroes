@@ -11,13 +11,13 @@
 
             <!-- se usa router link para definir a donde apunta cada enlace -->
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink='home'>Home</a>
+                <a class="nav-link" [routerLink]="['home']">Home</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink='heroes'>Heroes</a>
+                <a class="nav-link" [routerLink]="['heroes']">Heroes</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" routerLink='about'>About</a>
+                <a class="nav-link" [routerLink]="['about']">About</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
