@@ -30,7 +30,6 @@ export class HeroesComponent implements OnInit {
   // redirige ala ruta
   verHeroe(idx: number){
     this.router.navigate(['/heroe', idx]);
-
   }
 
 }

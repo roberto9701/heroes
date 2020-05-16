@@ -59,15 +59,32 @@ export class HeroesService {
         // console.log('listo');
     }
 
-    // metodo para poder accesar ala info fuera de este servicio
-
+// metodo para mostrar todos los heroes
     getHeroes(): Heroe[]{
         return this.heroes;
     }
 
+    // metodo para mostrar cada heroe en su pagina
     getHeroe( idx: string ){
-      return this.heroes['idx'];
+      return this.heroes[idx];
     }
+
+    // buscar heroes
+    buscarHeroes( termino: string ): Heroe[]{
+      // En esta variable se guardan los datos que coinciden con la busqueda
+      let heroesArr: Heroe[] = [];
+      termino = termino.toLowerCase();
+
+      for (let heroe of this.heroes) {
+        let nombre = heroe.nombre.toLowerCase();
+        // si hay una coincidencia se agrega el elemento al array heroesArr
+        if (nombre.indexOf( termino ) >= 0) {
+          heroesArr.push( heroe );
+        }
+      }
+      return heroesArr;
+    }
+
 
 }
 export interface Heroe {

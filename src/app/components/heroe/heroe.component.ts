@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // para recibir parametros en la url
 import { ActivatedRoute } from '@angular/router';
-import { HeroesService } from '../../services/heroes.service';
+import { HeroesService, Heroe } from '../../services/heroes.service';
 
 @Component({
   selector: 'app-heroe',
@@ -18,6 +18,7 @@ export class HeroeComponent {
     this.activatedRoute.params.subscribe( params => {
       // console.log( params['id'] );
       this.heroe = this._heroesService.getHeroe(params['id']);
+      console.log(this.heroe);
     });
 
   }

@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 .main-container {
@@ -36,4 +36,21 @@ body {
 
 .fadeIn {
     animation-name: fadeIn;
+}
+
+
+/* heroe */
+
+.casa-logo {
+    width: 120px;
+}
+
+
+/* footer*/
+
+footer {
+    position: fixed;
+    /* height: 100px; */
+    bottom: 0;
+    width: 100%;
 }
