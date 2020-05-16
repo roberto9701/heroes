@@ -1,11 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
-    /* padding-bottom: 50px; */
-}
-
 .main-container {
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 
@@ -50,7 +47,6 @@ body {
 
 footer {
     position: fixed;
-    /* height: 100px; */
     bottom: 0;
     width: 100%;
 }
